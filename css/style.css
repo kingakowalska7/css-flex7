@@ -1,15 +1,5 @@
-body {
-    font-family: 'Raleway', Arial, sans-serif;  
-    
-  }
-  
-  .website {
-    min-height: 100vh;
-  }
-  
   .website header,
   .website footer {
-   
     font-weight: 700;
   }
   
@@ -68,6 +58,7 @@ body {
     .hg-sidebar {
       flex: 0 0 260px;
     } 
+  }
 
     @media (max-width: 768px) {
         .website{
