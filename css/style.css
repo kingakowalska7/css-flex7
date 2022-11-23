@@ -23,6 +23,8 @@
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
+    
+    
    
   }
   
@@ -38,32 +40,62 @@
     background-color: powderblue;
     text-transform: uppercase;
     width: 60%;
+   
   }
   
   
   .sidebar-1 {
-    order: -1;
+   float:left;
     background-color: green;
     width: 20%;
+   
   }
 
   .sidebar-2 {
     background-color: pink;
-    
     width: 20%;
-   
   }
   
   
 
     @media (max-width: 768px) {
-      header,
-      footer,
-      .sidebar-1,
-       .sidebar-2,
-       .content {
+    
+    .content,
+    .sidebar-1,
+    .sidebar-2 {
       width: 100%;
-      }
     }
-				
+   .content {
+    order: 1;
+   }
+   .sidebar-2 {
+    order: 3;
+   }
+    .sidebar-1 {
+      order: 2;
+    }
+    
+  }
+  @media (min-width: 992px) {
+    .website {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    header,
+    .sidebar-1,
+    footer {
+      width: 100%;
+    }
+    .sidebar-2 {
+      width: 25%;
+    }
+    .content {
+      width: 75%;
+    }
+ 
+    .sidebar-1 {
+      order: 2;
+    }
   }
