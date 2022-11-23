@@ -5,8 +5,8 @@
   
   .website header,
   .website footer,
-  .website .hg-sidebar,
-  .website .hg-content {
+  .website .sidebar,
+  .website .content {
     text-align: center;
     font-weight: 700;
     padding: 20px;
@@ -14,7 +14,7 @@
   }
   
   .website,
-  .hg-main {
+  .main {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -28,40 +28,41 @@
     background-color: blueviolet;
   }
 
-  .hg-content {
+  .content {
     flex: 1 1 auto;
     background-color: powderblue;
     text-transform: uppercase;
   }
   
   
-  .hg-sidebar-1 {
+  .sidebar-1 {
     order: -1;
     background-color: green;
   }
 
-  .hg-sidebar-2 {
+  .sidebar-2 {
     background-color: pink;
   }
   
   @media (min-width: 768px) {
-    .hg-main {
+    .main {
       flex-direction: row;
     }
     
-    .hg-sidebar {
+    .sidebar {
       flex: 0 0 200px;
     }  
   }
   
   @media (min-width: 992px) {
-    .hg-sidebar {
+    .sidebar {
       flex: 0 0 260px;
     } 
   }
 
     @media (max-width: 768px) {
-        .website{
-            width: 100%;
-        }
+			 .website {
+        width: 100%
+       }
+				
   }
